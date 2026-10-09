@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rifadz Maulana — Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR  -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#" class="navbar__logo">&lt;<span> Portofolio</span></a>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="navbar__menu" id="navMenu">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!--  HERO  -->
+    <section class="hero" id="hero">
+      <div class="hero__particles" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="container hero__content">
+        <p class="hero__greeting">Hello, I'm</p>
+        <h1 class="hero__name">Rifadz Maulana<br />Herianto Putra</h1>
+        <p class="hero__role">
+          <span class="role-badge">Web Developer</span>
+          <span class="role-badge">Programmer</span>
+          <span class="role-badge">Data Science &amp; Data Analysis</span>
+        </p>
+        <p class="hero__tagline">
+          Membangun solusi digital yang elegan &amp; berbasis data.
+        </p>
+        <div class="hero__cta">
+          <a href="#portfolio" class="btn btn--primary">Lihat Portfolio</a>
+          <a href="#contact" class="btn btn--outline">Hubungi Saya</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT  -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about__grid">
+          <div class="about__avatar">
+            <!-- Placeholder avatar — ganti dengan foto asli -->
+            <img src="Screenshot 2026-10-09 194412.png" alt="Foto Profil Rifadz" class="avatar-foto">
+          </div>
+          <div class="about__text">
+            <p>
+              Saya adalah mahasiswa semester 5 yang sedang belajar
+              Web Developer dan
+              Data Enthusiast. Saya memiliki passion besar
+              dalam meracik kode menjadi aplikasi web modern dan mengolah data
+              mentah menjadi insight yang bermakna.
+            </p>
+            <p>
+              Bagi saya, teknologi yang baik bukan sekadar <em>"bisa jalan"</em>,
+              melainkan harus mampu memecahkan masalah nyata dengan cara yang
+              sederhana dan elegan. Menyadari bahwa proses belajar di dunia
+              teknologi tidak pernah berhenti, saya selalu antusias mengasah
+              kemampuan melalui berbagai program teknis untuk terus relevan
+              dengan inovasi terbaru:
+            </p>
+            <ul class="about__highlights">
+              <li>
+                <strong>Dicoding</strong> — Mendalami pengembangan web &amp;
+                back-end melalui learning path terstruktur.
+              </li>
+              <li>
+                <strong>RevoU</strong> — Memperkuat skill data analytics &amp;
+                digital product.
+              </li>
+              <li>
+                <strong>Seminar RAG AI</strong> — Mengikuti seminar tentang
+                Retrieval-Augmented Generation &amp; penerapan AI terkini.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Beberapa proyek yang pernah saya kerjakan</p>
+
+        <div class="portfolio__grid">
+          <!-- Card 1 -->
+          <article class="card">
+            <div class="card__image card__image--1">
+              <span class="card__badge">Web App</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">E-Commerce Dashboard</h3>
+              <p class="card__desc">
+                Dashboard interaktif untuk memantau penjualan, inventaris,
+                dan performa produk secara real-time menggunakan chart dan
+                tabel dinamis.
+              </p>
+              <div class="card__tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <a href="#" class="btn btn--small">Lihat Detail →</a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card">
+            <div class="card__image card__image--2">
+              <span class="card__badge">Data Science</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Sentiment Analysis Tool</h3>
+              <p class="card__desc">
+                Aplikasi analisis sentimen pada ulasan produk menggunakan
+                NLP &amp; Machine Learning, dilengkapi visualisasi data
+                interaktif.
+              </p>
+              <div class="card__tags">
+                <span>Python</span><span>Pandas</span><span>Scikit-Learn</span>
+              </div>
+              <a href="#" class="btn btn--small">Lihat Detail →</a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card">
+            <div class="card__image card__image--3">
+              <span class="card__badge">Full-Stack</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Task Management API</h3>
+              <p class="card__desc">
+                RESTful API lengkap untuk manajemen tugas tim, dilengkapi
+                autentikasi JWT, CRUD, dan dokumentasi Swagger.
+              </p>
+              <div class="card__tags">
+                <span>Node.js</span><span>Express</span><span>MongoDB</span>
+              </div>
+              <a href="#" class="btn btn--small">Lihat Detail →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT  -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">Tertarik bekerja sama? Jangan ragu untuk menghubungi!</p>
+
+        <div class="contact__grid">
+          <!-- Form -->
+          <form class="contact__form" action="#" method="post">
+            <div class="form-group">
+              <label for="name">Nama</label>
+              <input type="text" id="name" name="name" placeholder="Nama lengkap" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="email@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block">Kirim Pesan</button>
+          </form>
+
+          <!-- Social / Info -->
+          <div class="contact__info">
+            <div class="info-card">
+              <span class="info-icon">📧</span>
+              <h4>Email</h4>
+              <p>rifadzChen@gmail.com</p>
+            </div>
+            <div class="info-card">
+              <span class="info-icon">📍</span>
+              <h4>Lokasi</h4>
+              <p> Malang Indonesia</p>
+            </div>
+            <div class="social-links">
+              <a href="#" class="social-btn" aria-label="GitHub">
+                <!-- GitHub SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.78 0 12.292c0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.333-1.724-1.333-1.724-1.089-.73.083-.716.083-.716 1.205.083 1.838 1.215 1.838 1.215 1.07 1.802 2.807 1.281 3.492.98.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.228-3.164-.123-.298-.532-1.497.117-3.12 0 0 1.001-.314 3.28 1.209A11.5 11.5 0 0 1 12 6.844c1.02.005 2.047.136 3.006.398 2.277-1.523 3.276-1.209 3.276-1.209.65 1.623.241 2.822.118 3.12.765.825 1.226 1.877 1.226 3.164 0 4.53-2.805 5.528-5.475 5.818.43.364.823 1.084.823 2.185 0 1.577-.014 2.849-.014 3.235 0 .315.216.683.825.567C20.565 21.917 24 17.5 24 12.292 24 5.78 18.627.5 12 .5z"/></svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="LinkedIn">
+                <!-- LinkedIn SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zM6.864 20.452H3.81V9h3.054v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="Instagram">
+                <!-- Instagram SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER  -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Rifadz Maulana Herianto Putra. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Minimal JS for mobile nav toggle -->
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const menu   = document.getElementById('navMenu');
+    const navbar = document.getElementById('navbar');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('open');
+      toggle.classList.toggle('active');
+    });
+
+    
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('open');
+        toggle.classList.remove('active');
+      });
+    });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+  </script>
+</body>
+</html>
